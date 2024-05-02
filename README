@@ -1,0 +1,56 @@
+# Apollo Federation Example Project
+
+This repository demonstrates how to set up a microservices architecture using Apollo Federation. The project is divided into several services: Accounts, Products, Reviews, and a Gateway, along with a React client that interacts with the federated GraphQL services.
+
+## Overview
+
+Apollo Federation allows services to define their parts of a GraphQL schema, which a gateway then composes into a single schema. This enables clients to query data as if from a single GraphQL endpoint, even though the data might be sourced from multiple services.
+
+### Services
+
+- **Accounts Service**: Manages user accounts.
+- **Products Service**: Handles product data.
+- **Reviews Service**: Manages reviews related to products.
+- **Gateway**: Composes individual services into a unified GraphQL API.
+
+## Getting Started
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (version 12.x or later)
+
+### Installation
+
+Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/yourusername/apollo-federation-example.git
+cd apollo-federation-example
+
+Running the Services:
+To run each service and the gateway, you will need to install dependencies and start each Node.js application. Perform the following steps for each service (gateway, accounts-service, products-service, reviews-service)
+
+1. to a service
+cd <service-folder>
+node index.js to start the service
+2. to start the frontend
+npm install
+npm start
+
+
+1. Accounts Service
+
+    Purpose: Manages user account information.
+
+2. Products Service
+
+    Purpose: Handles all data related to products sold on the platform.
+
+3. Reviews Service
+
+    Purpose: Manages customer reviews for products.
+
+4. Gateway
+
+    Purpose: Serves as the central access point that combines individual GraphQL schemas from the above services into a unified API.
