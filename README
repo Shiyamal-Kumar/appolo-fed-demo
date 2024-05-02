@@ -31,7 +31,7 @@ cd apollo-federation-example
 Running the Services:
 To run each service and the gateway, you will need to install dependencies and start each Node.js application. Perform the following steps for each service (gateway, accounts-service, products-service, reviews-service)
 
-1. to a service
+1. to start a service
 cd <service-folder>
 node index.js to start the service
 2. to start the frontend
